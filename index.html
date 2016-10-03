@@ -9,19 +9,18 @@
   $("p").css("color","orznge");
   });
   
-    $(function(){
-  $("#toggle").on("click",function(){
-    $("#target").toggle("slow");
-  });
-    });
-  
+$("button").on("click,function(){
+               $("#target").animate({
+  "marginLeft":"1000px"
+});
+                                    });
   </script>
 </head>
 <body>
   <p>はじめまして</p>
   
   <div id="target"><img src="main75.png"width="300" align="left"></div>
-  <button id="toggle">ぺんぎん</button>
+  <button id="button">ぺんぎん</button>
   
   
 </body>
