@@ -8,19 +8,19 @@
   $(function(){
   $("p").css("color","red");
   });
-    </script>
-  <script type="text/javascript">
-$("#button").click(function(){
-$("#target").css("color","red");
-//  animate({"marginLeft":"300px"});
- });
+$(function(){
+  $("#toggle").on("click",function(){
+    $("target").toggle("slow");
+  });
+});
+    
   </script>
 </head>
 <body>
   <p>はじめまして</p>
-  <!--<img src="main75.png"width="300">-->
-  <div id="target">aaaaaaa</div>
-  <button id="button">ぺんぎん</button>
+
+  <div id="target"><img src="main75.png"width="300"></div>
+  <button id="toggle">ぺんぎん</button>
   
   
 </body>
