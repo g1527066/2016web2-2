@@ -8,9 +8,21 @@
   $(function(){
   $("p").css("color","orznge");
   });
+  
+    $(function(){
+  $("toggle").on("click",function(){
+    $("#target").toggle("slow");
+  });
+    });
+  
   </script>
 </head>
 <body>
   <p>はじめまして</p>
+  
+  <div id="target"></div>
+  <button id="toggle">ぺんぎん</button>
+  
+  
 </body>
 </html>
