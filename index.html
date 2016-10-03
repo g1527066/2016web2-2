@@ -8,12 +8,18 @@
   $(function(){
   $("p").css("color","red");
   });
-$(function(){
-  $("#toggle").on("click",function(){
-    $("#target").toggle("slow");
-  });
-});
+//$(function(){
+ // $("#toggle").on("click",function(){
+   // $("#target").toggle("slow");
+  //});
+//});
     
+    $(function(){
+$("#button").on("click", function () {
+    $("#target").animate({
+        "marginLeft": "100px"
+    });
+});
   </script>
 </head>
 <body>
